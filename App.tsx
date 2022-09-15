@@ -1,4 +1,4 @@
-import { StatusBar, Text, View } from 'react-native';
+import { StatusBar } from 'react-native';
 import {
   useFonts,
   Inter_400Regular,
@@ -7,7 +7,7 @@ import {
   Inter_900Black,
 } from '@expo-google-fonts/inter';
 
-import { Home } from './src/screens'
+import { Routes } from './src/routes'
 import { Background, Loading } from './src/components';
 
 export default function App() {
@@ -26,7 +26,7 @@ export default function App() {
         backgroundColor="transparent"
         translucent
       />
-      {isLoaded ? <Home /> : <Loading />}
+      {isLoaded ? <Routes /> : <Loading />}
     </Background>
   );
 }
